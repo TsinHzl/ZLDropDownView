@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B92A17B620216F0900187405 /* ZLDropDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92A17B520216F0900187405 /* ZLDropDownViewController.m */; };
 		B9348B67201F1E3E00A8CEC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9348B66201F1E3E00A8CEC3 /* main.m */; };
 		B9348B6A201F1E3E00A8CEC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9348B69201F1E3E00A8CEC3 /* AppDelegate.m */; };
 		B9348B6D201F1E3E00A8CEC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9348B6C201F1E3E00A8CEC3 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B92A17B420216F0900187405 /* ZLDropDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDropDownViewController.h; sourceTree = "<group>"; };
+		B92A17B520216F0900187405 /* ZLDropDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDropDownViewController.m; sourceTree = "<group>"; };
 		B9348B62201F1E3E00A8CEC3 /* ZLDropDownView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLDropDownView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9348B66201F1E3E00A8CEC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9348B68201F1E3E00A8CEC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 			children = (
 				B9655C9420207C2C00FE2D92 /* ZLDropDownView.h */,
 				B9655C9520207C2C00FE2D92 /* ZLDropDownView.m */,
+				B92A17B420216F0900187405 /* ZLDropDownViewController.h */,
+				B92A17B520216F0900187405 /* ZLDropDownViewController.m */,
 			);
 			path = ZLDropDownView;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			files = (
 				B9348B6D201F1E3E00A8CEC3 /* ViewController.m in Sources */,
 				B9655C9620207C2C00FE2D92 /* ZLDropDownView.m in Sources */,
+				B92A17B620216F0900187405 /* ZLDropDownViewController.m in Sources */,
 				B9348B6A201F1E3E00A8CEC3 /* AppDelegate.m in Sources */,
 				B9348B67201F1E3E00A8CEC3 /* main.m in Sources */,
 			);
