@@ -10,4 +10,10 @@
 
 @implementation ZLDropDownViewController
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if (self.viewClicked) {
+        self.viewClicked();
+    }
+}
+
 @end

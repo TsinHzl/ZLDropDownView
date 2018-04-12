@@ -17,6 +17,7 @@
 		B9348B80201F1E3E00A8CEC3 /* ZLDropDownViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9348B7F201F1E3E00A8CEC3 /* ZLDropDownViewTests.m */; };
 		B9348B8B201F1E3E00A8CEC3 /* ZLDropDownViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9348B8A201F1E3E00A8CEC3 /* ZLDropDownViewUITests.m */; };
 		B9655C9620207C2C00FE2D92 /* ZLDropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9655C9520207C2C00FE2D92 /* ZLDropDownView.m */; };
+		B9D4AAA9207DAF780038AEE9 /* UIView+ZLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D4AAA8207DAF770038AEE9 /* UIView+ZLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		B9348B8C201F1E3E00A8CEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9655C9420207C2C00FE2D92 /* ZLDropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDropDownView.h; sourceTree = "<group>"; };
 		B9655C9520207C2C00FE2D92 /* ZLDropDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDropDownView.m; sourceTree = "<group>"; };
+		B9D4AAA7207DAF770038AEE9 /* UIView+ZLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZLExtension.h"; sourceTree = "<group>"; };
+		B9D4AAA8207DAF770038AEE9 /* UIView+ZLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZLExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 		B9655C9320207C1400FE2D92 /* ZLDropDownView */ = {
 			isa = PBXGroup;
 			children = (
+				B9D4AAA7207DAF770038AEE9 /* UIView+ZLExtension.h */,
+				B9D4AAA8207DAF770038AEE9 /* UIView+ZLExtension.m */,
 				B9655C9420207C2C00FE2D92 /* ZLDropDownView.h */,
 				B9655C9520207C2C00FE2D92 /* ZLDropDownView.m */,
 				B92A17B420216F0900187405 /* ZLDropDownViewController.h */,
@@ -292,6 +297,7 @@
 				B9655C9620207C2C00FE2D92 /* ZLDropDownView.m in Sources */,
 				B92A17B620216F0900187405 /* ZLDropDownViewController.m in Sources */,
 				B9348B6A201F1E3E00A8CEC3 /* AppDelegate.m in Sources */,
+				B9D4AAA9207DAF780038AEE9 /* UIView+ZLExtension.m in Sources */,
 				B9348B67201F1E3E00A8CEC3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

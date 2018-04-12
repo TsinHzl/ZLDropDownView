@@ -10,4 +10,6 @@
 
 @interface ZLDropDownViewController : UIViewController
 
+@property(nonatomic, copy) void(^viewClicked)(void);
+
 @end

@@ -10,4 +10,6 @@
 
 @interface ZLDropDownView : NSObject
 
++ (void)showWithView:(UIView *)sView belowView:(UIView *)bView width:(CGFloat)vWidth height:(CGFloat)vHeight;
+
 @end
