@@ -19,7 +19,9 @@
 /**  屏幕适配，这里是以iphone6的宽度作为标准的，当然也可以使用其他机型的宽度或者是高度 ***/
 #define ZLFitRealValue(value) ((value)/750.0f*[UIScreen mainScreen].bounds.size.width)
 
+
 static CGFloat const ZLDropdownViewDuration = 0.45f;
+
 
 static UIWindow *_window = nil;
 
@@ -37,7 +39,7 @@ static UIWindow *_window = nil;
 
 + (void)showWithView:(UIView *)sView belowView:(UIView *)bView width:(CGFloat)vWidth height:(CGFloat)vHeight {
     [self setup];
-    CGRect cFrame = [_window convertRect:bView.frame toView:_window];
+    CGRect cFrame = [bView.superview convertRect:bView.frame toView:nil];
     __weak typeof(self) weakSelf = self;
     
     ZLDropDownViewController *dropdownVc = [[ZLDropDownViewController alloc] init];
