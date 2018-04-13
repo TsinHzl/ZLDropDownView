@@ -17,17 +17,19 @@
 #define ZLScreenHeight [UIScreen mainScreen].bounds.size.height
 
 /**  屏幕适配，这里是以iphone6的宽度作为标准的，当然也可以使用其他机型的宽度或者是高度 ***/
-#define ZLFitRealValue(value) ((value)/750.0f*[UIScreen mainScreen].bounds.size.width)
+#define ZLFitRealValue(value) ((value)/375.0f*[UIScreen mainScreen].bounds.size.width)
 
 
 static CGFloat const ZLDropdownViewDuration = 0.45f;
-
+static CGFloat const ZLDropdownViewShowViewDefaultHeight = 200.f;
+static CGFloat const ZLDropdownViewShowViewMaxHeight = 450.f;
 
 static UIWindow *_window = nil;
 
 
 @implementation ZLDropDownView
 
+#pragma mark - 初始化设置
 + (void)setup {
     if (!_window) {
         _window = [[UIWindow alloc] initWithFrame:ZLScreenBounds];
@@ -37,7 +39,12 @@ static UIWindow *_window = nil;
     _window.hidden = NO;
 }
 
-+ (void)showWithView:(UIView *)sView belowView:(UIView *)bView width:(CGFloat)vWidth height:(CGFloat)vHeight {
+#pragma mark - 显示、隐藏view
+
+/**
+ 显示view
+ */
++ (void)showWithView:(UIView *)sView belowView:(UIView *)bView {
     [self setup];
     CGRect cFrame = [bView.superview convertRect:bView.frame toView:nil];
     __weak typeof(self) weakSelf = self;
@@ -47,9 +54,17 @@ static UIWindow *_window = nil;
     _window.rootViewController = dropdownVc;
     
     CGFloat sViewY = CGRectGetMaxY(cFrame);
-    CGFloat sViewH = sView.zl_height;
+    CGFloat sViewH = sView.zl_height > 0 ? sView.zl_height : ZLDropdownViewShowViewDefaultHeight;
+    CGFloat sViewW = sView.zl_width > 0 ? sView.zl_width : ZLScreenWidth;
+    if (sViewH > ZLDropdownViewShowViewMaxHeight) {
+        sViewH = ZLFitRealValue(ZLDropdownViewShowViewMaxHeight);
+    }else {
+        sViewH = ZLFitRealValue(sViewH);
+    }
     sView.zl_y = sViewY;
-    sView.zl_height = 0.01f;
+    sView.zl_height = 0;
+    sView.zl_width = sViewW;
+    
     [dropdownVc.view addSubview:sView];
     
     [self animtionWithView:sView viewHeight:sViewH comletion:^{
@@ -59,6 +74,21 @@ static UIWindow *_window = nil;
     }];
 }
 
+/**
+ 隐藏view
+ */
++ (void)hideWithView:(UIView *)sView {
+    CGFloat sViewH = 0;
+    
+    [self animtionWithView:sView viewHeight:sViewH comletion:^{
+        if (_window) {
+            _window.hidden = YES;
+            _window.rootViewController = nil;
+            _window = nil;
+        }
+    }];
+}
+#pragma mark - UIView的动画方法
 + (void)animtionWithView:(UIView *)sView viewHeight:(CGFloat)sViewH comletion:(void(^)(void))comletion {
     
     [UIView animateWithDuration:ZLDropdownViewDuration delay:0 usingSpringWithDamping:1 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
@@ -71,15 +101,4 @@ static UIWindow *_window = nil;
     
 }
 
-+ (void)hideWithView:(UIView *)sView {
-    CGFloat sViewH = 0.01f;
-   
-    [self animtionWithView:sView viewHeight:sViewH comletion:^{
-        if (_window) {
-            _window.hidden = YES;
-            _window.rootViewController = nil;
-            _window = nil;
-        }
-    }];
-}
 @end

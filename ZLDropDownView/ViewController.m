@@ -47,6 +47,6 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UIView *sView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.bounds.size.width, 200.f)];
     sView.backgroundColor = [UIColor magentaColor];
-    [ZLDropDownView showWithView:sView belowView:self.blueView width:0 height:200.f];
+    [ZLDropDownView showWithView:sView belowView:self.blueView];
 }
 @end
