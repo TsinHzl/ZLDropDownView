@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA3FA3B4228128EB00C5DE9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FA3B3228128EB00C5DE9C /* AppDelegate.m */; };
+		FA3FA3B7228128EB00C5DE9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FA3B6228128EB00C5DE9C /* ViewController.m */; };
+		FA3FA3BA228128EB00C5DE9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3FA3B8228128EB00C5DE9C /* Main.storyboard */; };
+		FA3FA3BC228128ED00C5DE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3FA3BB228128ED00C5DE9C /* Assets.xcassets */; };
+		FA3FA3BF228128ED00C5DE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3FA3BD228128ED00C5DE9C /* LaunchScreen.storyboard */; };
+		FA3FA3C2228128ED00C5DE9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FA3C1228128ED00C5DE9C /* main.m */; };
+		FA3FA3CF2281290300C5DE9C /* ZLDropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FA3C92281290300C5DE9C /* ZLDropDownView.m */; };
+		FA3FA3D02281290300C5DE9C /* ZLDropDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FA3CB2281290300C5DE9C /* ZLDropDownViewController.m */; };
+		FA3FA3D12281290300C5DE9C /* UIView+ZLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FA3CC2281290300C5DE9C /* UIView+ZLExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA3FA3AF228128EB00C5DE9C /* ZLDropDownViewExmaple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLDropDownViewExmaple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3FA3B2228128EB00C5DE9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA3FA3B3228128EB00C5DE9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA3FA3B5228128EB00C5DE9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA3FA3B6228128EB00C5DE9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA3FA3B9228128EB00C5DE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA3FA3BB228128ED00C5DE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA3FA3BE228128ED00C5DE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA3FA3C0228128ED00C5DE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3FA3C1228128ED00C5DE9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA3FA3C92281290300C5DE9C /* ZLDropDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDropDownView.m; sourceTree = "<group>"; };
+		FA3FA3CA2281290300C5DE9C /* UIView+ZLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZLExtension.h"; sourceTree = "<group>"; };
+		FA3FA3CB2281290300C5DE9C /* ZLDropDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDropDownViewController.m; sourceTree = "<group>"; };
+		FA3FA3CC2281290300C5DE9C /* UIView+ZLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZLExtension.m"; sourceTree = "<group>"; };
+		FA3FA3CD2281290300C5DE9C /* ZLDropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDropDownView.h; sourceTree = "<group>"; };
+		FA3FA3CE2281290300C5DE9C /* ZLDropDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDropDownViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA3FA3AC228128EB00C5DE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA3FA3A6228128EB00C5DE9C = {
+			isa = PBXGroup;
+			children = (
+				FA3FA3B1228128EB00C5DE9C /* ZLDropDownViewExmaple */,
+				FA3FA3B0228128EB00C5DE9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA3FA3B0228128EB00C5DE9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA3FA3AF228128EB00C5DE9C /* ZLDropDownViewExmaple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA3FA3B1228128EB00C5DE9C /* ZLDropDownViewExmaple */ = {
+			isa = PBXGroup;
+			children = (
+				FA3FA3C82281290300C5DE9C /* ZLDropDownView */,
+				FA3FA3B2228128EB00C5DE9C /* AppDelegate.h */,
+				FA3FA3B3228128EB00C5DE9C /* AppDelegate.m */,
+				FA3FA3B5228128EB00C5DE9C /* ViewController.h */,
+				FA3FA3B6228128EB00C5DE9C /* ViewController.m */,
+				FA3FA3B8228128EB00C5DE9C /* Main.storyboard */,
+				FA3FA3BB228128ED00C5DE9C /* Assets.xcassets */,
+				FA3FA3BD228128ED00C5DE9C /* LaunchScreen.storyboard */,
+				FA3FA3C0228128ED00C5DE9C /* Info.plist */,
+				FA3FA3C1228128ED00C5DE9C /* main.m */,
+			);
+			path = ZLDropDownViewExmaple;
+			sourceTree = "<group>";
+		};
+		FA3FA3C82281290300C5DE9C /* ZLDropDownView */ = {
+			isa = PBXGroup;
+			children = (
+				FA3FA3C92281290300C5DE9C /* ZLDropDownView.m */,
+				FA3FA3CA2281290300C5DE9C /* UIView+ZLExtension.h */,
+				FA3FA3CB2281290300C5DE9C /* ZLDropDownViewController.m */,
+				FA3FA3CC2281290300C5DE9C /* UIView+ZLExtension.m */,
+				FA3FA3CD2281290300C5DE9C /* ZLDropDownView.h */,
+				FA3FA3CE2281290300C5DE9C /* ZLDropDownViewController.h */,
+			);
+			path = ZLDropDownView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA3FA3AE228128EB00C5DE9C /* ZLDropDownViewExmaple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3FA3C5228128ED00C5DE9C /* Build configuration list for PBXNativeTarget "ZLDropDownViewExmaple" */;
+			buildPhases = (
+				FA3FA3AB228128EB00C5DE9C /* Sources */,
+				FA3FA3AC228128EB00C5DE9C /* Frameworks */,
+				FA3FA3AD228128EB00C5DE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZLDropDownViewExmaple;
+			productName = ZLDropDownViewExmaple;
+			productReference = FA3FA3AF228128EB00C5DE9C /* ZLDropDownViewExmaple.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA3FA3A7228128EB00C5DE9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = MacBook;
+				TargetAttributes = {
+					FA3FA3AE228128EB00C5DE9C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FA3FA3AA228128EB00C5DE9C /* Build configuration list for PBXProject "ZLDropDownViewExmaple" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA3FA3A6228128EB00C5DE9C;
+			productRefGroup = FA3FA3B0228128EB00C5DE9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3FA3AE228128EB00C5DE9C /* ZLDropDownViewExmaple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3FA3AD228128EB00C5DE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3FA3BF228128ED00C5DE9C /* LaunchScreen.storyboard in Resources */,
+				FA3FA3BC228128ED00C5DE9C /* Assets.xcassets in Resources */,
+				FA3FA3BA228128EB00C5DE9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA3FA3AB228128EB00C5DE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3FA3B7228128EB00C5DE9C /* ViewController.m in Sources */,
+				FA3FA3CF2281290300C5DE9C /* ZLDropDownView.m in Sources */,
+				FA3FA3D02281290300C5DE9C /* ZLDropDownViewController.m in Sources */,
+				FA3FA3C2228128ED00C5DE9C /* main.m in Sources */,
+				FA3FA3D12281290300C5DE9C /* UIView+ZLExtension.m in Sources */,
+				FA3FA3B4228128EB00C5DE9C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA3FA3B8228128EB00C5DE9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA3FA3B9228128EB00C5DE9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA3FA3BD228128ED00C5DE9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA3FA3BE228128ED00C5DE9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA3FA3C3228128ED00C5DE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA3FA3C4228128ED00C5DE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA3FA3C6228128ED00C5DE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GYDMVUU7KH;
+				INFOPLIST_FILE = ZLDropDownViewExmaple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TsinHzl.ZLDropDownViewExmaple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA3FA3C7228128ED00C5DE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GYDMVUU7KH;
+				INFOPLIST_FILE = ZLDropDownViewExmaple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TsinHzl.ZLDropDownViewExmaple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA3FA3AA228128EB00C5DE9C /* Build configuration list for PBXProject "ZLDropDownViewExmaple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3FA3C3228128ED00C5DE9C /* Debug */,
+				FA3FA3C4228128ED00C5DE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3FA3C5228128ED00C5DE9C /* Build configuration list for PBXNativeTarget "ZLDropDownViewExmaple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3FA3C6228128ED00C5DE9C /* Debug */,
+				FA3FA3C7228128ED00C5DE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA3FA3A7228128EB00C5DE9C /* Project object */;
+}
